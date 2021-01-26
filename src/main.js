@@ -5,5 +5,5 @@ import './styles/button.scss';
 import './styles/modal.scss';
 import './styles/styles.scss';
 
-// import './js/pre-loading';
+import './js/pre-loading';
 import './js/modal';
