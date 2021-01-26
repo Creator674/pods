@@ -1,0 +1,353 @@
+.modal {
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+}
+
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+}
+
+.modal__container {
+  max-width: 1000px;
+  background-color: #fff;
+  padding: 30px;
+  width: 80vw;
+  max-height: 90vh;
+  border-radius: 4px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  color: #00449e;
+  box-sizing: border-box;
+}
+
+.modal__close {
+  background: transparent;
+  border: 0;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.modal__header .modal__close:before {
+  content: "\2715";
+}
+
+.modal__content {
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.modal__btn {
+  font-size: 0.875rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: #e6e6e6;
+  color: rgba(0, 0, 0, 0.8);
+  border-radius: 1rem;
+  border-style: none;
+  border-width: 0;
+  cursor: pointer;
+  -webkit-appearance: button;
+  text-transform: none;
+  overflow: visible;
+  line-height: 1.15;
+  margin: 0;
+  will-change: transform;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  transition: -webkit-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+}
+
+.modal__btn:focus,
+.modal__btn:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.modal__btn-primary {
+  margin: 0 40px;
+  background-color: #000000;
+  color: #fff;
+}
+
+/**************************\
+  Demo Animation Style
+\**************************/
+@keyframes mmfadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes mmfadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes mmslideIn {
+  from {
+    transform: translateY(15%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes mmslideOut {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10%);
+  }
+}
+
+.micromodal-slide {
+  display: none;
+}
+
+.micromodal-slide.is-open {
+  display: block;
+}
+
+.micromodal-slide[aria-hidden="false"] .modal__overlay {
+  animation: mmfadeIn 0.3s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.micromodal-slide[aria-hidden="false"] .modal__container {
+  animation: mmslideIn 0.3s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.micromodal-slide[aria-hidden="true"] .modal__overlay {
+  animation: mmfadeOut 0.3s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.micromodal-slide[aria-hidden="true"] .modal__container {
+  animation: mmslideOut 0.3s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.micromodal-slide .modal__container,
+.micromodal-slide .modal__overlay {
+  will-change: transform;
+}
+.modal__footer {
+  margin: 20px 0 0 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.modal__content {
+  margin: 0 auto;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.header-pods {
+  display: flex;
+}
+.pods-pro--white {
+  &__wrapper {
+    margin: 60px 50px 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__image {
+    width: 200px;
+  }
+  &__description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &__name {
+    margin-left: 50px;
+    font-size: 50px;
+    color: black;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+}
+.complectation {
+  margin: 30px 50px 0 50px;
+  &-heading {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    &--text {
+      text-align: center;
+      margin: 10px 0;
+      font-size: 30px;
+      color: black;
+      font-weight: bold;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    }
+    &--btn {
+      position: relative;
+      width: 20px;
+      height: 20px;
+      border: none;
+      background: none;
+    }
+    &--btn:before,
+    &--btn:after {
+      position: absolute;
+      left: 9px;
+      top: 0px;
+      content: " ";
+      height: 20px;
+      width: 2px;
+      background-color: #333;
+      transition: transform .2s ease;
+    }
+    &--btn:before {
+      transform: rotate(0deg);
+      transition: transform .2s ease;
+    }
+    &--btn:after {
+      transform: rotate(90deg);
+      transition: transform .2s ease;
+    }
+    &--btn:hover {
+      cursor: pointer;
+    }
+    &--btn:hover::before {
+      transform: rotate(15deg);
+    }
+    &--btn:hover::after {
+      transform: rotate(105deg);
+    }
+  }
+  &-list {
+    list-style: none;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height .5s ease;
+    &--item {
+      font-size: 20px;
+    }
+  }
+}
+.features {
+  &-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      &--btn {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        border: none;
+        background: none;
+      }
+      &--btn:before,
+      &--btn:after {
+        position: absolute;
+        left: 9px;
+        top: 0px;
+        content: " ";
+        height: 20px;
+        width: 2px;
+        background-color: #333;
+        transition: transform .2s ease;
+      }
+      &--btn:before {
+        transform: rotate(0deg);
+        transition: transform .2s ease;
+      }
+      &--btn:after {
+        transform: rotate(90deg);
+        transition: transform .2s ease;
+      }
+      &--btn:hover {
+        cursor: pointer;
+      }
+      &--btn:hover::before {
+        transform: rotate(15deg);
+      }
+      &--btn:hover::after {
+        transform: rotate(105deg);
+      }
+  }
+  
+  &-list {
+    list-style: none;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height .5s ease;
+    &--item {
+      font-size: 15px;
+    }
+  }
+}
+
+.price {
+  margin: 10px 0 0 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  &--previous {
+    text-decoration: line-through;
+    text-decoration-color: black;
+    color: red;
+  }
+  &--current {
+    color: black;
+  }
+}
+
+.list--opened {
+  max-height: 500px;
+  transition: max-height .5s ease;
+}
