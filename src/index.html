@@ -18,39 +18,39 @@
     </div>
   </div>
 
-  <div class="modal micromodal-slide" id="modal-pro--white" aria-hidden="true">
+  <div class="modal micromodal-slide" id="modal-pro" aria-hidden="true">
     <div class="modal__overlay" tabindex="-1" data-custom-close>
       <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
         <header class="modal__header">
           <div class="header-pods">
-            <h1 class="pods-pro--white__name">AirPods Pro</h1>
-            <button class="modal__btn modal__btn-primary">Заказать</button>
+            <h1 class="pods-pro__name">AirPods Pro</h1>
+            <button data-custom-open="modal-order" class="modal__btn modal__btn-primary modal-order-btn">Заказать</button>
           </div>
           <button class="modal__close" aria-label="Close modal" data-custom-close></button>
         </header>
         <main class="modal__content" id="modal-1-content">
-          <div class="pods-pro--white__wrapper">
-            <img class="pods-pro--white__image" src="./assets/pods-pro-white.png" alt="AirPods">
+          <div class="pods-pro__wrapper">
+            <img class="pods-pro__image" src="./assets/pods-pro-white.png" alt="AirPods">
             <p class="price price--previous">119,9 <span class="gray">BYN</span></p>
             <p class="price price--current">68,9 <span class="gray">BYN</span></p>
-            <div class="complectation">
-              <div class="complectation-heading">
-                <h1 class="complectation-heading--text">Комплектация</h1>
-                <button class="complectation-heading--btn"></button>
-              </div>
-              <ul class="complectation-list">
-                <li class="complectation-list--item">Наушники AirPods Pro</li>
-                <li class="complectation-list--item">Зарядный кейс</li>
-                <li class="complectation-list--item">Две пары сменных амбушюр</li>
-                <li class="complectation-list--item">Кабель для зарядки кейса(USB Type-C)</li>
-                <li class="complectation-list--item">Инструкция по использованию</li>
-              </ul>
+          </div>
+          <div class="complectation">
+            <div class="complectation-heading">
+              <h1 class="complectation-heading--text">Комплектация</h1>
+              <button class="complectation-heading--btn"></button>
             </div>
+            <ul class="complectation-list">
+              <li class="complectation-list--item">Наушники AirPods Pro</li>
+              <li class="complectation-list--item">Зарядный кейс</li>
+              <li class="complectation-list--item">Две пары сменных амбушюр</li>
+              <li class="complectation-list--item">Кабель для зарядки кейса(USB Type-C)</li>
+              <li class="complectation-list--item">Инструкция по использованию</li>
+            </ul>
           </div>
           <div class="features">
             <div class="features-heading">
               <h1 class="features-heading--text">Характеристика</h1>
-            <button class="features-heading--btn"></button>
+              <button class="features-heading--btn"></button>
             </div>
             <ul class="features-list">
               <li class="features-list--item">Наушники ПРОБИВАЮТСЯ на оффициальном сайте эпл</li>
@@ -72,64 +72,72 @@
             </ul>
           </div>
         </main>
+        <footer class="modal__footer">
+          <a href="tel:++375292596023" class="tel">+375292596023 (МТС)</a>
+          <h1 class="modal__footer--heading">Pods.by</h1>
+        </footer>
       </div>
     </div>
   </div>
 
-  <div class="modal micromodal-slide" id="modal-2--white" aria-hidden="true">
-    <div class="modal__overlay" tabindex="-1" data-custom-close>
-      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
-        <header class="modal__header">
-          <div class="header-pods">
-            <h1 class="pods-pro--white__name">AirPods Pro</h1>
-            <button class="modal__btn modal__btn-primary">Заказать</button>
-          </div>
-          <button class="modal__close" aria-label="Close modal" data-custom-close></button>
+  <div class="modal micromodal-slide modal-order" id="modal-order" aria-hidden="true">
+    <div class="modal__overlay modal-order__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container modal-order__container" role="dialog" aria-modal="true"
+        aria-labelledby="modal-1-title">
+        <header class="modal__header modal-order__header">
+          <h2 class="modal__title modal-order__title" id="modal-1-title">
+            Оформление заказа
+          </h2>
+          <button class="modal__btn modal-order__btn-close" data-custom-close="modal-order"
+          aria-label="Close this dialog window">Закрыть</button>
         </header>
-        <main class="modal__content" id="modal-1-content">
-          <div class="pods-pro--white__wrapper">
-            <img class="pods-pro--white__image" src="./assets/pods-pro-white.png" alt="AirPods">
-            <p class="price price--previous">119,9 <span class="gray">BYN</span></p>
-            <p class="price price--current">68,9 <span class="gray">BYN</span></p>
-            <div class="complectation">
-              <div class="complectation-heading">
-                <h1 class="complectation-heading--text">Комплектация</h1>
-                <button class="complectation-heading--btn"></button>
-              </div>
-              <ul class="complectation-list">
-                <li class="complectation-list--item">Наушники AirPods Pro</li>
-                <li class="complectation-list--item">Зарядный кейс</li>
-                <li class="complectation-list--item">Две пары сменных амбушюр</li>
-                <li class="complectation-list--item">Кабель для зарядки кейса(USB Type-C)</li>
-                <li class="complectation-list--item">Инструкция по использованию</li>
-              </ul>
+
+        <form class="modal__form" action="https://formspree.io/f/myyboanw" method="POST">
+          <main class="modal__content modal-order__content" id="modal-1-content">
+
+            <div class="menu-item">
+              <label class="menu-item--label" for="model">Модель</label>
+              <select class="menu-item--form select--model" id="model" name="model" class="select-model">
+                <option value="airpods-pro">AirPods Pro</option>
+                <option value="airpods-2">AirPods 2</option>
+              </select>
             </div>
-          </div>
-          <div class="features">
-            <h1 class="features--heading">Характеристика</h1>
-            <ul class="features-list">
-              <li class="features-list--item">Наушники ПРОБИВАЮТСЯ на оффициальном сайте эпл</li>
-              <li class="features-list--item">Анимация при подключении</li>
-              <li class="features-list--item">Цвет кейса и наушников - белый</li>
-              <li class="features-list--item">Работают как с IPhone, так и с Android</li>
-              <li class="features-list--item">Новейший чип NODE</li>
-              <li class="features-list--item">До 4,5 часов автономной работы</li>
-              <li class="features-list--item">Более чем 24 часа работы с зарядкой</li>
-              <li class="features-list--item">Сенсорное управление</li>
-              <li class="features-list--item">Не мигают во время работы</li>
-              <li class="features-list--item">Микрофон в каждом наушнике</li>
-              <li class="features-list--item">Беспроводная зарядка</li>
-              <li class="features-list--item">Более глубокий и насыщенный звук в нижних частотах</li>
-              <li class="features-list--item">Чистый звук на максимальной громкости</li>
-              <li class="features-list--item">Мгновенное подключение к телефону</li>
-              <li class="features-list--item">нимации при подключении и при использовании наушников</li>
-              <li class="features-list--item">Возможность менять имя и настраивать управление</li>
-            </ul>
-          </div>
-        </main>
+
+            <div class="menu-item">
+              <label class="menu-item--label" for="color">Цвет</label>
+              <select class="menu-item--form select--color" id="color" name="color" class="select-color">
+                <option value="white">Белый</option>
+                <option value="black">Черный</option>
+              </select>
+            </div>
+
+            <div class="menu-item">
+              <label class="menu-item--label" for="number">Телефон:</label>
+              <textarea class="menu-item--form textarea--number" name="number" id="number" cols="14" rows="1"
+                maxlength="13"></textarea>
+            </div>
+
+            <div class="menu-item menu-item--additional">
+              <label class="menu-item--label menu-item--label--additional" for="additional-info">Дополнительная
+                информация:</label>
+              <textarea class="menu-item--form menu-item--form--additional textarea--info" name="additional-info"
+                id="additional-info" cols="15" rows="5" maxlength="250"></textarea>
+            </div>
+
+            <img class="product--image" src="./assets/pods-pro-white.png" alt="AirPods">
+            <p class="product-price">Итого: <span class="product-price--value">119,9</span><span
+                class="gray"> BYN</span></p>
+
+          </main>
+          <footer class="modal__footer modal-order__footer">
+            <p class="form-status"></p>
+            <button type="submit" class="modal__btn modal__btn-primary modal-order__btn-send">Отправить</button>
+          </footer>
+        </form>
       </div>
     </div>
   </div>
+
 
   <header class="header">
     <div class="header-logo-wrapper">
@@ -145,7 +153,7 @@
     <section class="presentation presentation-pods-pro">
       <p class="presentation--text">AirPods Pro</p>
       <img class="presentation--img" src="./assets/AirPods-pro.png" alt="AirPods-pro">
-      <button data-custom-open="modal-pro--white" class="btn-buy btn-buy-pro">
+      <button data-custom-open="modal-pro" class="btn-buy btn-buy-pro">
         <p class="btn-buy--text">Купить</p>
       </button>
     </section>
@@ -153,7 +161,7 @@
     <section class="presentation presentation-pods-2">
       <p class="presentation--text presentation-pods-2--text">AirPods 2</p>
       <img class="presentation--img presentation-pods-2--img" src="./assets/pods-2-white.png" alt="AirPods-2">
-      <button class="btn-buy btn-buy-2">
+      <button data-custom-open="modal-pro" class="btn-buy btn-buy-2">
         <p class="btn-buy--text">Купить</p>
       </button>
     </section>
@@ -166,14 +174,14 @@
           <img class="showcase-icon showcase-icon--pro--white" src="./assets/pods-pro-white.png" alt="airpods">
           <p class="showcase-available">В наличии</p>
           <p class="showcase-price">68,9 <span class="gray">BYN</span></p>
-          <button class="buy--btn">Купить</button>
+          <button data-custom-open="modal-pro" class="buy--btn pods-pro--btn--white">Купить</button>
         </div>
         <div class="showcase-item showcase-pro-black">
           <p class="showcase--name">AirPods Pro Black</p>
           <img class="showcase-icon showcase-icon--pro--black" src="./assets/pods-pro-black.png" alt="airpods">
           <p class="showcase-available">В наличии</p>
           <p class="showcase-price">74,9 <span class="gray">BYN</span></p>
-          <button class="buy--btn">Купить</button>
+          <button data-custom-open="modal-pro" class="buy--btn pods-pro--btn--black">Купить</button>
         </div>
       </div>
       <div class="showcase--line"></div>
@@ -183,14 +191,14 @@
           <img class="showcase-icon showcase-icon--2--black" src="./assets/pods-2-black.png" alt="airpods">
           <p class="showcase-available">В наличии</p>
           <p class="showcase-price">62,9 <span class="gray">BYN</span></p>
-          <button class="buy--btn">Купить</button>
+          <button data-custom-open="modal-pro" class="buy--btn pods-2--btn--black">Купить</button>
         </div>
         <div class="showcase-item showcase-2-white">
           <p class="showcase--name showcase--name--2">AirPods 2</p>
           <img class="showcase-icon showcase-icon--2--white" src="./assets/pod-2-white.png" alt="airpods">
           <p class="showcase-available">В наличии</p>
           <p class="showcase-price">58,9 <span class="gray">BYN</span></p>
-          <button class="buy--btn">Купить</button>
+          <button data-custom-open="modal-pro" class="buy--btn pods-2--btn--white">Купить</button>
         </div>
       </div>
     </section>
