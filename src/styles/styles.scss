@@ -38,8 +38,15 @@ a {
   margin: 3px 60px 0;
   font-family: "Roboto";
   font-size: 20px;
+  display: flex;
+  flex-direction: column;
   &--ship {
     margin-left: 22px;
+  }
+  &--tel {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    margin-top: 5px;
   }
   color: white;
 }
@@ -595,6 +602,15 @@ a {
   }
 }
 
+@media (max-width: 755px) {
+  .header--item {
+    margin: 0 30px;
+  }
+  .header-logo {
+    margin: 4px 0px 0 7px;
+  }
+}
+
 @media (max-width: 700px) {
   .about {
     margin-top: 50px;
@@ -625,6 +641,12 @@ a {
   }
   .about-wrapper {
     padding-bottom: 28px;
+  }
+  .header--item {
+    margin: 0 15px;
+  }
+  .header-logo {
+    margin: 4px 0px 0 7px;
   }
 }
 
@@ -691,17 +713,26 @@ a {
     font-size: 14px;
   }
 }
+
+@media (max-width: 535px) {
+  .header--item {
+    margin: 0 10px;
+  }
+  .header-logo {
+    margin: 4px 0px 0 7px;
+  }
+}
+
+@media (max-width: 510px) {
+  .header--item {
+    font-size: 15px;
+  }
+}
+
 @media (max-width: 505px) {
   .pouring {
     font-size: 30px;
     padding: 20px;
-  }
-  .header--item {
-    margin-left: 30px;
-    margin-right: 30px;
-  }
-  .header-logo {
-    margin: 4px 0px 0 7px;
   }
 }
 @media (max-width: 495px) {
@@ -731,6 +762,9 @@ a {
   }
   .bonus {
     margin-top: 20px;
+  }
+  .header--item--tel {
+    font-size: 10px;
   }
 }
 @media (max-width: 430px) {
@@ -763,18 +797,21 @@ a {
   .main-info-item--text {
     font-size: 12px;
 }
-.header-order--btn {
-  margin-top: 20px;
-  padding: 10px 30px;
-  font-size: 10px;
-}
-.main-info {
-  margin-top: 100px;
-  padding-bottom: 100px;
-}
-.header--item {
-  font-size: 15px;
-}
+  .header-order--btn {
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 10px;
+  }
+  .main-info {
+    margin-top: 100px;
+    padding-bottom: 100px;
+  }
+  .header--item {
+    &--tel {
+      font-size: 8px;
+    }
+    font-size: 10px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -791,10 +828,6 @@ a {
   }
 }
 @media (max-width: 375px) {
-  .header--item {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
   .main-info{
     margin-top: 50px;
   }
@@ -802,6 +835,12 @@ a {
 @media (max-width: 365px) {
   .about-text {
     max-width: 100%;
+  }
+  .header--item {
+    &--tel {
+      font-size: 6px;
+    }
+    font-size: 8px;
   }
 }
 @media (max-width: 355px) {
