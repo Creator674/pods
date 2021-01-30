@@ -94,40 +94,16 @@
 
         <form class="modal__form" action="https://formspree.io/f/xaylvgqg" method="POST">
           <main class="modal__content modal-order__content" id="modal-1-content">
-
             <div class="menu-item">
-              <label class="menu-item--label" for="model">Модель</label>
-              <select class="menu-item--form select--model" id="model" name="model" class="select-model">
-                <option value="airpods-pro">AirPods Pro</option>
-                <option value="airpods-2">AirPods 2</option>
-              </select>
-            </div>
-
-            <div class="menu-item">
-              <label class="menu-item--label" for="color">Цвет</label>
-              <select class="menu-item--form select--color" id="color" name="color" class="select-color">
-                <option value="white">Белый</option>
-                <option value="black">Черный</option>
-              </select>
-            </div>
-
-            <div class="menu-item">
-              <label class="menu-item--label" for="number">Телефон:</label>
+              <label class="menu-item--label" for="number">Телефон</label>
               <textarea class="menu-item--form textarea--number" name="number" id="number" cols="14" rows="1"
                 maxlength="13"></textarea>
             </div>
-
-            <div class="menu-item menu-item--additional">
-              <label class="menu-item--label menu-item--label--additional" for="additional-info">Дополнительная
-                информация:</label>
-              <textarea class="menu-item--form menu-item--form--additional textarea--info" name="additional-info"
-                id="additional-info" cols="15" rows="5" maxlength="250"></textarea>
+            <div class="menu-item">
+              <label class="menu-item--label" for="name">Имя</label>
+              <textarea class="menu-item--form textarea--name" name="name" id="name" cols="14" rows="1"
+                minlength="2"></textarea>
             </div>
-
-            <img class="product--image" src="./assets/pods-pro-white.png" alt="AirPods">
-            <p class="product-price">Итого: <span class="product-price--value">119,9</span><span
-                class="gray"> BYN</span></p>
-
           </main>
           <footer class="modal__footer modal-order__footer">
             <p class="form-status"></p>
@@ -139,32 +115,51 @@
   </div>
 
 
+
+
+
   <header class="header">
-    <div class="header-logo-wrapper">
-      <div class="pouring header-logo">Pods.by</div>
-    </div>
-    <nav class="header-navbar">
-      <a href="#showcase" class="header-navbar--item">Каталог</a>
-      <a href="#shipping" class="header-navbar--item">О нас</a>
+    <nav class="header-wrapper">
+      <img src="./assets/logo.png" alt="acs-logo" class="header-logo header--item">
+      <a href="#showcase" class="header--item">Каталог</a>
+      <a href="#shipping" class="header--item header--item--ship">О нас</a>
     </nav>
+
+    <section class="main-info">
+      <h1 class="main-info--heading">Лучший звук в Беларуси</h1>
+      <p class="main-info--pre-heading">Чип нового поколения</p>
+      <ul class="main-info--list">
+        <li class="main-info-item">
+          <img src="./assets/globe.svg" alt="globe" class="main-info-item--img">
+          <p class="main-info-item--text">Доставка по Беларуси в течение 2-3 дней</p>
+        </li>
+        <li class="main-info-item">
+          <img src="./assets/landing-sale.svg" alt="sale" class="main-info-item--img">
+          <p class="main-info-item--text">При покупке двух товаров скидка</p>
+        </li>
+        <li class="main-info-item">
+          <img src="./assets/free-ship.svg" alt="ship" class="main-info-item--img">
+          <p class="main-info-item--text">Бесплатная доставка по Минску</p>
+        </li>
+        <li class="main-info-item">
+          <img src="./assets/landing-case.svg" alt="ship" class="main-info-item--img">
+          <p class="main-info-item--text">Силиконовый чехол в подарок</p>
+        </li>
+        <li class="main-info-item">
+          <img src="./assets/guarantee.svg" alt="guarantee" class="main-info-item--img">
+          <p class="main-info-item--text">Гарантия 30 дней</p>
+        </li>
+      </ul>
+      <button class="header-order--btn" data-custom-open="modal-order">Заказать</button>
+    </section>
   </header>
 
-  <main class="main">
-    <section class="presentation presentation-pods-pro">
-      <p class="presentation--text">AirPods Pro</p>
-      <img class="presentation--img" src="./assets/AirPods-pro.png" alt="AirPods-pro">
-      <button data-custom-open="modal-pro" class="btn-buy btn-buy-pro">
-        <p class="btn-buy--text">Купить</p>
-      </button>
-    </section>
 
-    <section class="presentation presentation-pods-2">
-      <p class="presentation--text presentation-pods-2--text">AirPods 2</p>
-      <img class="presentation--img presentation-pods-2--img" src="./assets/pods-2-white.png" alt="AirPods-2">
-      <button data-custom-open="modal-pro" class="btn-buy btn-buy-2">
-        <p class="btn-buy--text">Купить</p>
-      </button>
-    </section>
+
+
+
+
+  <main class="main">
 
     <section class="showcase" id="showcase">
       <h1 name="showcase" class="showcase-heading">Каталог</h1>

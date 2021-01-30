@@ -11,8 +11,6 @@ const PodsImage = document.querySelector('.pods-pro__image');
 const PodsPricePrevious = document.querySelector('.price--previous');
 const PodsPriceCurrent = document.querySelector('.price--current');
 
-const PodsProSharedBtn = document.querySelector('.btn-buy-pro');
-const Pods2SharedBtn = document.querySelector('.btn-buy-2');
 const PodsProWhiteBtn = document.querySelector('.pods-pro--btn--white');
 const PodsProBlackBtn = document.querySelector('.pods-pro--btn--black');
 const Pods2WhiteBtn = document.querySelector('.pods-2--btn--white');
@@ -93,9 +91,6 @@ function changeModalInfo() {
     });
   }
 }
-
-PodsProSharedBtn.addEventListener('click', changeModalInfo.bind(WhiteInfoPro));
-Pods2SharedBtn.addEventListener('click', changeModalInfo.bind(WhiteInfo2));
 
 PodsProWhiteBtn.addEventListener('click', changeModalInfo.bind(WhiteInfoPro));
 PodsProBlackBtn.addEventListener('click', changeModalInfo.bind(BlackInfoPro));

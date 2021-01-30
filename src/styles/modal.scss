@@ -1,3 +1,7 @@
+textarea {
+  resize: none;
+}
+
 .modal {
   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
     helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
@@ -17,7 +21,7 @@
 }
 
 .modal__container {
-  max-width: 1000px;
+  max-width: 500px;
   background-color: #fff;
   padding: 30px;
   width: 80vw;

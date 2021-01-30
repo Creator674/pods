@@ -114,6 +114,10 @@
     font-size: 10px;
     height: 35px;
   }
+  .modal-order__btn-send {
+    font-size: 10px;
+    height: 35px;
+  }
 }
 
 @media (max-width: 485px) {
@@ -149,6 +153,12 @@
     font-size: 15px;
   }
   .modal-order__btn-close {
+    font-size: 9px;
+    height: 25px;
+    width: 60px;
+    padding: 0;
+  }
+  .modal-order__btn-send {
     font-size: 9px;
     height: 25px;
     width: 60px;
