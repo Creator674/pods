@@ -198,6 +198,7 @@ button:focus {
   justify-content: space-evenly;
 }
 .header-pods {
+  margin-bottom: 60px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -373,6 +374,7 @@ button:focus {
   }
 }
 
+
 .list--opened {
   max-height: 800px;
   transition: max-height 0.5s ease;
@@ -424,6 +426,12 @@ button:focus {
   .features-list--item {
     font-size: 10px;
   }
+  .header-pods {
+    margin-bottom: 20px;
+  }
+  .pods-pro__wrapper {
+    margin-top: 20px;
+  }
 }
 @media (max-width: 425px) {
   .complectation-heading--text {
@@ -437,6 +445,9 @@ button:focus {
   }
   .features-heading--btn {
     margin-left: 10px;
+  }
+  .features {
+    margin-top: 10px;
   }
 }
 @media (max-width: 380px) {
