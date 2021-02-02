@@ -21,7 +21,7 @@ textarea {
 }
 
 .modal__container {
-  max-width: 500px;
+  max-width: 600px;
   background-color: #fff;
   padding: 30px;
   width: 80vw;
@@ -229,7 +229,9 @@ button:focus {
   }
 }
 .complectation {
-  margin: 30px 50px 0 50px;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
   &-heading {
     display: flex;
     justify-content: center;
@@ -282,6 +284,7 @@ button:focus {
     }
   }
   &-list {
+    max-width: 370px;
     list-style: none;
     max-height: 0px;
     overflow: hidden;
@@ -292,6 +295,7 @@ button:focus {
   }
 }
 .features {
+  margin: 30px 50px 0 50px;
   &-heading {
     display: flex;
     align-items: center;
