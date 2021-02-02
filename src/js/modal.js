@@ -110,6 +110,7 @@ function createGallery(imagesAmount, model, color) {
   for (let i = 0; i < imagesAmount; i += 1) {
     const slide = document.createElement('img');
     slide.classList.add('splide__slide');
+    slide.classList.add(`gallery--${model}-${color}`);
     slide.src = `./assets/pods-${model}-${color}--${i + 1}.jpg`;
     slide.alt = 'airpods';
     splideList.appendChild(slide);

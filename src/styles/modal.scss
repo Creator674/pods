@@ -476,5 +476,83 @@ button:focus {
 }
 
 .splide__slide {
-  max-height: 300px;
+  object-fit: contain;
+}
+
+.gallery{
+  &--2-black  {
+    max-height: 180px;
+  }
+  &--2-white  {
+    max-height: 355px;
+  }
+  &--pro-black  {
+    max-height: 265px;
+  }
+  &--pro-white  {
+    max-height: 350px;
+  }
+}
+@media (max-width: 660px) {
+  .gallery{
+    &--2-black  {
+      max-height: 155px;
+    }
+    &--2-white  {
+      max-height: 355px;
+    }
+    &--pro-black  {
+      max-height: 230px;
+    }
+    &--pro-white  {
+      max-height: 300px;
+    }
+  }
+}
+@media (max-width: 560px) {
+  .gallery{
+    &--2-black  {
+      max-height: 125px;
+    }
+    &--2-white  {
+      max-height: 285px;
+    }
+    &--pro-black  {
+      max-height: 190px;
+    }
+    &--pro-white  {
+      max-height: 250px;
+    }
+  }
+}
+@media (max-width: 460px) {
+  .gallery{
+    &--2-black  {
+      max-height: 180px;
+      object-fit: cover;
+    }
+    &--2-white  {
+      max-height: 225px;
+    }
+    &--pro-black  {
+      max-height: 150px;
+    }
+    &--pro-white  {
+      max-height: 200px;
+    }
+  }
+}
+@media (max-width: 340px) {
+  .gallery{
+    &--2-white  {
+      max-height: 200px;
+      object-fit: cover;
+    }
+    &--pro-black  {
+      max-height: 115px;
+    }
+    &--pro-white  {
+      max-height: 160px;
+    }
+  }
 }
